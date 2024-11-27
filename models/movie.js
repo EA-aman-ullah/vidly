@@ -20,10 +20,10 @@ const Movie = mongoose.model(
     dailyRentalRate: {
       type: Number,
       required: true,
-      menlength: 0,
+      minlength: 0,
     },
     genre: {
-      genreSchema,
+      type: genreSchema,
       required: true,
     },
   })
