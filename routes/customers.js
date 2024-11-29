@@ -1,3 +1,4 @@
+const auth = require("../middleware/auth");
 const { Customer, validate } = require("../models/customer");
 const express = require("express");
 const router = express.Router();
