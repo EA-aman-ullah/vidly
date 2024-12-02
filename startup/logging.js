@@ -2,17 +2,15 @@ const winston = require("winston");
 require("express-async-errors");
 require("winston-mongodb");
 
-// Winston Logger Configuration
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
     winston.format.timestamp(),
-    winston.format.json() // Log in JSON format
+    winston.format.json()
   ),
   transports: [
-    // Log regular messages to a file
-    new winston.transports.File({ filename: "logfile.log" }),
-    // Log errors to MongoDB
+    new winston.transports.File({ filename: "logfile.log", level: "error" }),
+
     new winston.transports.MongoDB({
       db: "mongodb://localhost/vidly",
       level: "error",
@@ -20,23 +18,32 @@ const logger = winston.createLogger({
   ],
 });
 
-// Handle uncaught exceptions
-winston.exceptions.handle(
-  new winston.transports.File({ filename: "uncaughtExceptions.log" })
-);
+winston.exceptions.handle([
+  new winston.transports.Console({
+    format: winston.format.combine(
+      winston.format.colorize(),
+      winston.format.prettyPrint() // Format the log with color and simplicity
+    ),
+  }),
+  new winston.transports.File({ filename: "uncaughtExceptions.log" }),
+]);
 
-// Handle unhandled promise rejections
-winston.rejections.handle(
-  new winston.transports.File({ filename: "unhandledRejections.log" })
-);
+winston.rejections.handle([
+  new winston.transports.Console({
+    format: winston.format.combine(
+      winston.format.colorize(),
+      winston.format.prettyPrint() // Format the log with color and simplicity
+    ),
+  }),
+  new winston.transports.File({ filename: "unhandledRejections.log" }),
+]);
 
-// Console transport for development
 if (process.env.NODE_ENV !== "production") {
   logger.add(
     new winston.transports.Console({
       format: winston.format.combine(
         winston.format.colorize(),
-        winston.format.simple()
+        winston.format.prettyPrint()
       ),
     })
   );
