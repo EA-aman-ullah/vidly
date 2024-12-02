@@ -6,12 +6,8 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/me", auth, async (req, res) => {
-  try {
-    const user = await User.findById(req.user._id).select("-password");
-    res.send(user);
-  } catch (ex) {
-    res.status(500).send("Something Failed.");
-  }
+  const user = await User.findById(req.user._id).select("-password");
+  res.send(user);
 });
 
 router.post("/", async (req, res) => {

@@ -5,12 +5,8 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  try {
-    const customers = await Customer.find().sort("name");
-    res.send(customers);
-  } catch (ex) {
-    res.status(500).send("Something Failed.");
-  }
+  const customers = await Customer.find().sort("name");
+  res.send(customers);
 });
 
 router.post("/", auth, async (req, res) => {
