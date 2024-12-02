@@ -7,8 +7,12 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const rental = await Rental.find().sort("-dateOut");
-  res.send(rental);
+  try {
+    const rental = await Rental.find().sort("-dateOut");
+    res.send(rental);
+  } catch (ex) {
+    res.send(500).send("Something Failed.");
+  }
 });
 
 router.post("/", auth, async (req, res) => {

@@ -6,8 +6,12 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const movies = await Movie.find().sort("name");
-  res.send(movies);
+  try {
+    const movies = await Movie.find().sort("name");
+    res.send(movies);
+  } catch (ex) {
+    res.status(500).send("Something Failed.");
+  }
 });
 
 router.post("/", auth, async (req, res) => {
