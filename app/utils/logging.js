@@ -21,17 +21,30 @@ const logger = winston.createLogger({
       level: "error",
     }),
   ],
+  exceptionHandlers: [
+    new winston.transports.Console({
+      format: winston.format.combine(
+        winston.format.colorize(),
+        winston.format.printf(({ message, stack }) => {
+          return `UNHANDLED EXCEPTION:\nMessage: ${message}\nStack:\n${stack}`;
+        })
+      ),
+    }),
+    new winston.transports.File({ filename: "uncaughtExceptions.log" }), // Log exceptions to a separate file
+  ],
+  rejectionHandlers: [
+    new winston.transports.Console({
+      format: winston.format.combine(
+        winston.format.colorize(),
+        winston.format.printf(({ message, stack }) => {
+          return `UNHANDLED PROMISE REJECTION:\nMessage: ${message}\nStack:\n${stack}`;
+        })
+      ),
+    }),
+    new winston.transports.File({ filename: "unhandledRejections.log" }), // Log promise rejections to a separate file
+  ],
+  exitOnError: true, // Exit process on errors
 });
-
-winston.exceptions.handle(
-  new winston.transports.Console(),
-  new winston.transports.File({ filename: "uncaughtExceptions.log" })
-);
-
-winston.rejections.handle(
-  new winston.transports.Console(),
-  new winston.transports.File({ filename: "unhandledRejections.log" })
-);
 
 if (process.env.NODE_ENV !== "production") {
   logger.add(

@@ -1,5 +1,99 @@
-{"date":"Tue Dec 03 2024 15:34:27 GMT+0500 (Pakistan Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: something failed\nError: something failed\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","os":{"loadavg":[0,0,0],"uptime":22584.359},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Mosh-prectical\\backend\\vidly\\index.js"],"cwd":"D:\\Mosh-prectical\\backend\\vidly","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262752,"external":22948927,"heapTotal":57204736,"heapUsed":30166960,"rss":76316672},"pid":1856,"uid":null,"version":"v20.18.0"},"stack":"Error: something failed\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","trace":[{"column":7,"file":"file:///D:/Mosh-prectical/backend/vidly/index.js","function":null,"line":9,"method":null,"native":false},{"column":25,"file":"node:internal/modules/esm/module_job","function":"ModuleJob.run","line":234,"method":"run","native":false},{"column":24,"file":"node:internal/modules/esm/loader","function":"async ModuleLoader.import","line":473,"method":"import","native":false},{"column":5,"file":"node:internal/modules/run_main","function":"async asyncRunEntryPointWithESMLoader","line":123,"method":null,"native":false}]}
-{"date":"Tue Dec 03 2024 15:35:49 GMT+0500 (Pakistan Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: something failed\nError: something failed\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","os":{"loadavg":[0,0,0],"uptime":22666.437},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Mosh-prectical\\backend\\vidly\\index.js"],"cwd":"D:\\Mosh-prectical\\backend\\vidly","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262752,"external":22948927,"heapTotal":56676352,"heapUsed":29267768,"rss":76140544},"pid":3832,"uid":null,"version":"v20.18.0"},"stack":"Error: something failed\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","trace":[{"column":7,"file":"file:///D:/Mosh-prectical/backend/vidly/index.js","function":null,"line":9,"method":null,"native":false},{"column":25,"file":"node:internal/modules/esm/module_job","function":"ModuleJob.run","line":234,"method":"run","native":false},{"column":24,"file":"node:internal/modules/esm/loader","function":"async ModuleLoader.import","line":473,"method":"import","native":false},{"column":5,"file":"node:internal/modules/run_main","function":"async asyncRunEntryPointWithESMLoader","line":123,"method":null,"native":false}]}
-{"date":"Tue Dec 03 2024 15:37:10 GMT+0500 (Pakistan Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: something failed\nError: something failed\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","os":{"loadavg":[0,0,0],"uptime":22747.093},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Mosh-prectical\\backend\\vidly\\index.js"],"cwd":"D:\\Mosh-prectical\\backend\\vidly","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262752,"external":22948927,"heapTotal":56938496,"heapUsed":28665440,"rss":76062720},"pid":14792,"uid":null,"version":"v20.18.0"},"stack":"Error: something failed\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","trace":[{"column":7,"file":"file:///D:/Mosh-prectical/backend/vidly/index.js","function":null,"line":9,"method":null,"native":false},{"column":25,"file":"node:internal/modules/esm/module_job","function":"ModuleJob.run","line":234,"method":"run","native":false},{"column":24,"file":"node:internal/modules/esm/loader","function":"async ModuleLoader.import","line":473,"method":"import","native":false},{"column":5,"file":"node:internal/modules/run_main","function":"async asyncRunEntryPointWithESMLoader","line":123,"method":null,"native":false}]}
-{"date":"Tue Dec 03 2024 16:21:43 GMT+0500 (Pakistan Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: FATAL ERROR: jwtPrivateKey in not defined.\nError: FATAL ERROR: jwtPrivateKey in not defined.\n    at default (file:///D:/Mosh-prectical/backend/vidly/app/startup/config.js:5:11)\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","os":{"loadavg":[0,0,0],"uptime":1575.796},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Mosh-prectical\\backend\\vidly\\index.js"],"cwd":"D:\\Mosh-prectical\\backend\\vidly","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262752,"external":22948927,"heapTotal":57204736,"heapUsed":30114448,"rss":76247040},"pid":3772,"uid":null,"version":"v20.18.0"},"stack":"Error: FATAL ERROR: jwtPrivateKey in not defined.\n    at default (file:///D:/Mosh-prectical/backend/vidly/app/startup/config.js:5:11)\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","trace":[{"column":11,"file":"file:///D:/Mosh-prectical/backend/vidly/app/startup/config.js","function":"default","line":5,"method":null,"native":false},{"column":1,"file":"file:///D:/Mosh-prectical/backend/vidly/index.js","function":null,"line":10,"method":null,"native":false},{"column":25,"file":"node:internal/modules/esm/module_job","function":"ModuleJob.run","line":234,"method":"run","native":false},{"column":24,"file":"node:internal/modules/esm/loader","function":"async ModuleLoader.import","line":473,"method":"import","native":false},{"column":5,"file":"node:internal/modules/run_main","function":"async asyncRunEntryPointWithESMLoader","line":123,"method":null,"native":false}]}
-{"date":"Wed Dec 04 2024 09:47:48 GMT+0500 (Pakistan Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: FATAL ERROR: jwtPrivateKey in not defined.\nError: FATAL ERROR: jwtPrivateKey in not defined.\n    at default (file:///D:/Mosh-prectical/backend/vidly/app/startup/config.js:5:11)\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","os":{"loadavg":[0,0,0],"uptime":64340.703},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Mosh-prectical\\backend\\vidly\\index.js"],"cwd":"D:\\Mosh-prectical\\backend\\vidly","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262752,"external":22948927,"heapTotal":57466880,"heapUsed":29986752,"rss":76857344},"pid":14580,"uid":null,"version":"v20.18.0"},"stack":"Error: FATAL ERROR: jwtPrivateKey in not defined.\n    at default (file:///D:/Mosh-prectical/backend/vidly/app/startup/config.js:5:11)\n    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)\n    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)","trace":[{"column":11,"file":"file:///D:/Mosh-prectical/backend/vidly/app/startup/config.js","function":"default","line":5,"method":null,"native":false},{"column":1,"file":"file:///D:/Mosh-prectical/backend/vidly/index.js","function":null,"line":10,"method":null,"native":false},{"column":25,"file":"node:internal/modules/esm/module_job","function":"ModuleJob.run","line":234,"method":"run","native":false},{"column":24,"file":"node:internal/modules/esm/loader","function":"async ModuleLoader.import","line":473,"method":"import","native":false},{"column":5,"file":"node:internal/modules/run_main","function":"async asyncRunEntryPointWithESMLoader","line":123,"method":null,"native":false}]}
+2024-12-04T06:49:46.132Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:51:57.981Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:52:11.277Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:52:52.044Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:53:06.981Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:53:20.280Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:54:28.964Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T06:55:29.158Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T07:24:52.274Z [error]: uncaughtException: something failed
+Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: something failed
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:9:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)

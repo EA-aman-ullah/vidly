@@ -1,0 +1,22 @@
+2024-12-04T07:21:16.320Z [error]: unhandledRejection: failed to connet
+Error: failed to connet
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:16
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: failed to connet
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:16
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T07:23:27.157Z [error]: unhandledRejection: failed to connet
+Error: failed to connet
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:16
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: failed to connet
+    at file:///D:/Mosh-prectical/backend/vidly/index.js:10:16
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
