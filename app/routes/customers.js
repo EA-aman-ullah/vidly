@@ -1,61 +1,39 @@
 import auth from "../middleware/auth.js";
 import admin from "../middleware/admin.js";
-import Customer, { validateCustomer } from "../models/customer.js";
 import express from "express";
+import {
+  createCustomer,
+  deleteCustomer,
+  getCustomerById,
+  getCustomers,
+  updateCustomer,
+} from "../controller/customersController.js";
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const customers = await Customer.find().sort("name");
+  const customers = await getCustomers();
   res.send(customers);
 });
 
 router.post("/", auth, async (req, res) => {
-  const { error } = validateCustomer(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
-  let customer = new Customer({
-    name: req.body.name,
-    phone: req.body.phone,
-    isGold: req.body.isGold,
-  });
-  customer = await customer.save();
-
-  res.send(customer);
+  const { status, body } = await createCustomer(req);
+  res.status(status).send(body);
 });
 
 router.put("/:id", auth, async (req, res) => {
-  const { error } = validateCustomer(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
-  const customer = await Customer.findByIdAndUpdate(
-    req.params.id,
-    { name: req.body.name, phone: req.body.phone, isGold: req.body.isGold },
-    { new: true }
-  );
-
-  if (!customer)
-    return res.status(404).send("The Genre with given ID was not found");
-
-  res.send(customer);
+  const { status, body } = await updateCustomer(req);
+  res.status(status).send(body);
 });
 
 router.delete("/:id", [auth, admin], async (req, res) => {
-  const customer = await Customer.findByIdAndDelete(req.params.id);
-
-  if (!customer)
-    return res.status(404).send("The Genre with given ID was not found");
-
-  res.send(customer);
+  const { status, body } = await deleteCustomer(req.params.id);
+  res.status(status).send(body);
 });
 
 router.get("/:id", async (req, res) => {
-  const customer = await Customer.findById(req.params.id);
-
-  if (!customer)
-    return res.status(404).send("The Genre with given ID was not found");
-
-  res.send(customer);
+  const { status, body } = await getCustomerById(req.params.id);
+  res.status(status).send(body);
 });
 
 export default router;

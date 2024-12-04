@@ -6,11 +6,11 @@ import config from "./app/startup/config.js";
 import validation from "./app/startup/validation.js";
 
 const app = express();
-
-routes(app);
-db();
+// throw new Error("something failed");
 config();
+db();
 validation();
+routes(app);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => logger.info(`listening on port ${port}...`));

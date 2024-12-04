@@ -1,4 +1,3 @@
-
 import Joi from "joi";
 import mongoose from "mongoose";
 
@@ -10,7 +9,7 @@ export const genreSchema = new mongoose.Schema({
     maxlength: 50,
   },
 });
-export default mongoose.model("Genre", genreSchema);
+const Genre = mongoose.model("Genre", genreSchema);
 
 export const validateGenre = (genre) => {
   const Schema = {
@@ -19,3 +18,5 @@ export const validateGenre = (genre) => {
 
   return Joi.object(Schema).validate(genre);
 };
+
+export default Genre;
